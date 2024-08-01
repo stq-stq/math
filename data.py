@@ -26,6 +26,8 @@ import matplotlib.pyplot as plt
 #         miss = 0
 #         for k, fileName in enumerate(files):
 #             filePath = os.path.join(innerSubfolderPath, fileName)
+#             if fileName.startswith('~$'):
+#                 continue
 
 #             data = pd.read_excel(filePath)
 
@@ -232,5 +234,5 @@ for file_name in os.listdir(folder_path):
             plt.xlabel('x')
             plt.ylabel('y')
             plt.title('k=' + str(k))
-            ax.scatter(x[i, 1],x[i, 2], x[i, 3], c=colo[lab[i]])
+            ax.scatter(x[i, 0],x[i, 1], x[i, 2], c=colo[lab[i]])
         plt.show()

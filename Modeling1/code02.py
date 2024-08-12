@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-1
-
-
 import pandas as pd
 import numpy as np
 from scipy.stats import skew, kurtosis
